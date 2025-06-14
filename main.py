@@ -198,8 +198,8 @@ def main():
 
             flights_data = Path("US_flights_2023.csv")
             weather_data = Path("weather_meteo_by_airport.csv")
-            # if not flights_data.exists() or not weather_data.exists():
-                # gdown.download_folder('https://drive.google.com/drive/folders/18houVS5ebR_Bw3_lQ3bNZ5X09lhaFsim')
+            if not flights_data.exists() or not weather_data.exists():
+                gdown.download_folder('https://drive.google.com/drive/folders/18houVS5ebR_Bw3_lQ3bNZ5X09lhaFsim')
 
             preparator = PreparingCSV(
                 input_file='US_flights_2023.csv',
